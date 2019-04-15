@@ -1,7 +1,8 @@
 import math
+import fractions
 
 def give_cos(a):
-    return math.cos(a)
+    return (math.cos(a))
 
 def give_sin(a):
     return math.sin(a)
@@ -20,10 +21,10 @@ def give_cot(a):
 
 def main():
     a = int(input("Enter the number of which you want to get the value of"))
-    lol = raw_input("Enter the trignometric function (cos , sin , tan , cosec , sec , cot) : ")
+    lol = input("Enter the trignometric function (cos , sin , tan , cosec , sec , cot) : ")
     yes = lol.lower()
     if yes == "cos":
-        print(give_cos(a))
+        print((give_cos(a)),"or",(fractions.Fraction(give_cos(a))))
     elif yes == "sin":
         print(give_sin(a))
     elif yes == "tan":
