@@ -20,13 +20,13 @@ def give_cot(a):
     return 1 / math.tan(a)
 
 def main():
-    a = int(input("Enter the number of which you want to get the value of"))
+    a = int(input("Enter the number of which you want to get the value of "))
     lol = input("Enter the trignometric function (cos , sin , tan , cosec , sec , cot) : ")
     yes = lol.lower()
     if yes == "cos":
         print((give_cos(a)),"or",(fractions.Fraction(give_cos(a))))
     elif yes == "sin":
-        print(give_sin(a))
+        print(give_sin(a), "or" , (fractions.Fraction(give_sin(a))))
     elif yes == "tan":
         print(give_tan(a))
     elif yes == "cosec":
