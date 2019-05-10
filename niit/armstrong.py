@@ -4,7 +4,7 @@ sum = 0
 while num > 0:
     digit = num%10
     num //= 10
-    sum += digit**3
+    sum += digit**len(str(temp))
 
 if temp == sum:
     print("Number is armstrong")
